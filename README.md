@@ -7,7 +7,7 @@
 - Install **XCode** command line tools
 - Set up **Homebrew**
 - Install and configure **git**
-- Install latest python2 and python3 and virtual environment
+- Install latest **python2** and **python3** and virtual environment
 - Install and configure **nvm** & **Node.JS**
 - Install **PostgreSQL** & **MongoDB**
 - Add on optional software
