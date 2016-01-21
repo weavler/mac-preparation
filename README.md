@@ -107,6 +107,16 @@ To cache your credentials, run in the following command in your Terminal:
 ```bash
 $ git config --global credential.helper cache
 ```
+## Python
+
+System comes with built-in python already. But if you want to use latest python 2.7.x and 3.x use Homebrew.
+One advantage is that `brew` also install `pip` package manager addtionally. To use system `python` you need
+to install pip follow the help [here](https://pip.pypa.io/en/stable/installing/) 
+
+```bash
+brew install python python3
+```
+
 
 ## NodeJS
 
@@ -124,9 +134,6 @@ or Wget:
     wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
 
 <sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
-
-You can customize the install source, directory and profile using the `NVM_SOURCE`, `NVM_DIR`, and `PROFILE` variables.
-Eg: `curl ... | NVM_DIR="path/to/nvm" bash`
 
 <sub>*NB. The installer can use `git`, `curl`, or `wget` to download `nvm`, whatever is available.*</sub>
 
