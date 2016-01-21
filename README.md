@@ -15,13 +15,9 @@
 
 ## Getting started
 
-We will be doing most of the work within the **Terminal**, which looks like this: 
-
-![Terminal](https://s3-us-west-1.amazonaws.com/stanleycyang-v2/Terminal.png-513031f6e74b7ae025f217c21535f9716ec9babd)
+We will be doing most of the work within the **Terminal**: 
 
 To open the Terminal in your Mac, simply open up the `Finder` by pressing `command` + `spacebar` and type in **Terminal**.
-
-![Finder](https://s3-us-west-1.amazonaws.com/stanleycyang-v2/Finder.png-e42584b6019840aa9ffec4ace16c7d79c996120c)
 
 Once, your Terminal is open, you are ready to begin!
 
@@ -118,24 +114,31 @@ $ git config --global credential.helper cache
 
 **Rule of Thumb:** *If you are running npm with `sudo`, you are doing it wrong.*
 
-Run in your Terminal: 
 
-```bash
-$ brew install nvm
-```
+To install or update nvm, you can use the [install script][2] using cURL:
 
-Install the latest version of Node.JS (currently 5 at the time of writing):
+    curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
+
+or Wget:
+
+    wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
+
+<sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
+
+You can customize the install source, directory and profile using the `NVM_SOURCE`, `NVM_DIR`, and `PROFILE` variables.
+Eg: `curl ... | NVM_DIR="path/to/nvm" bash`
+
+<sub>*NB. The installer can use `git`, `curl`, or `wget` to download `nvm`, whatever is available.*</sub>
+
+To install the latest version of Node.JS (21/01/2016):
 
 ```bash
 nvm install 5
 ```
 
-In order to utilize the version of Node.JS you want, add the following lines to your `~/.bash_profile` or whichever environment profile you choose to use:
+When you have multiple node versions installed, Choose your version of interest
 
 ```bash
-# load nvm
-source ~/.nvm/nvm.sh
-# Choose the Node.JS version
 nvm use 5
 ```
 
