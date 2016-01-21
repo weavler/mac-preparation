@@ -109,7 +109,7 @@ $ git config --global credential.helper cache
 ## Python
 
 System comes with built-in python already. But if you want to use latest python 2.7.x and 3.x use Homebrew.
-One advantage is that `brew` also install `pip` package manager addtionally. To use system `python` you need
+One advantage is that `brew` also install `pip` package manager addtionally. When using system `python` you need
 to install pip follow the help [here](https://pip.pypa.io/en/stable/installing/) 
 
 ```bash
