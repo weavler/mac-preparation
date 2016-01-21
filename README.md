@@ -195,3 +195,4 @@ A lot of programs will require [Java](https://support.apple.com/kb/DL1572?locale
 [2]: https://github.com/creationix/nvm/blob/v0.30.2/install.sh
 
 
+Credits : [Stanley](https://twitter.com/StanleyCYang) 
