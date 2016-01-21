@@ -171,4 +171,7 @@ A lot of programs will require [Java](https://support.apple.com/kb/DL1572?locale
 
 [Atom](https://atom.io/) is an open-source text-editor created by [Github](https://github.com). You will need a trustworthy text-editor for your journey. Some alternatives are: [Sublime](http://www.sublimetext.com/), [Vim](http://www.vim.org/), or [Visual Studio](https://www.visualstudio.com/downloads/download-visual-studio-vs).
 
+[1]: https://github.com/creationix/nvm.git
+[2]: https://github.com/creationix/nvm/blob/v0.30.2/install.sh
+
 
