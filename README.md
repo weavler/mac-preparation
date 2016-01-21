@@ -1,14 +1,13 @@
 # Basic mac setup for development
 
-# The Perfect Mac OS X Setup for Web Development
-
-> Setting up is always the most **painstaking** part of software development. My goal here is to provide a simple step-by-by guide that walks through the perfect web development setup for Mac OS X. 
+>  Good foundation enjoy carrying tons of loads! 
 
 ## Objectives
 
 - Install **XCode** command line tools
 - Set up **Homebrew**
 - Install and configure **git**
+- Install lates python2 and python3
 - Install and configure **nvm** & **Node.JS**
 - Install **PostgreSQL** & **MongoDB**
 - Add on optional software
@@ -117,6 +116,22 @@ to install pip follow the help [here](https://pip.pypa.io/en/stable/installing/)
 brew install python python3
 ```
 
+Install **virtualenv** and **virtualenvwrapper** and other advanced virtual environment managers as you needed.
+One can find a detailed instruction in [here](http://docs.python-guide.org/en/latest/dev/virtualenvs/)
+
+To install virtualenv:
+
+```bash
+pip install virtualenv
+```
+
+To install virtualenvwrapper (make sure **virtualenv** is already installed):
+
+```bash
+$ pip install virtualenvwrapper
+$ export WORKON_HOME=~/Envs
+$ source /usr/local/bin/virtualenvwrapper.sh
+```
 
 ## NodeJS
 
@@ -133,9 +148,7 @@ or Wget:
 
     wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.30.2/install.sh | bash
 
-<sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`).</sub>
-
-<sub>*NB. The installer can use `git`, `curl`, or `wget` to download `nvm`, whatever is available.*</sub>
+<sub>The script clones the nvm repository to `~/.nvm` and adds the source line to your profile (`~/.bash_profile`, `~/.zshrc` or `~/.profile`). *NB. The installer can use `git`, `curl`, or `wget` to download `nvm`, whatever is available.*</sub>
 
 To install the latest version of Node.JS (21/01/2016):
 
