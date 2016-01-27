@@ -131,12 +131,13 @@ To install virtualenvwrapper (make sure **virtualenv** is already installed):
 pip install virtualenvwrapper
 ```
 
-Then add in your environment file, `subl ~/.bash_profile` the following lines
+Then add in your environment file, `subl ~/.bash_profile` the following lines (assuming sublime is installed)
 
 ```
-$ export WORKON_HOME=~/Envs
-$ source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=~/Envs
+source /usr/local/bin/virtualenvwrapper.sh
 ```
+Then run `source ~/.bash_profile`
 
 Now you have setup virtual environment for python and there are 2 ways to create virtualenv
 
