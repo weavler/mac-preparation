@@ -140,11 +140,13 @@ $ source /usr/local/bin/virtualenvwrapper.sh
 
 Now you have setup virtual environment for python and there are 2 ways to create virtualenv
 
-###  To create virtualenv inside the project directory 
+1. To create virtualenv inside the project directory, just run `virtualenv env` 
+To activate the virtualenv you have created, here `env`, run `source env/bin/activate` 
+To deactivate, simply run `deactivate`
 
-```
-virtualenv env 
-```
+2. To create virtaulenv with virtualenvwrapper, run `mkvirtualenv env` the enviroment
+will be setup in your `~/Envs`, the `WORKON_HOME`. Then from anywhere you can access
+the virtual environemt by running `workon env`
 
 ## NodeJS
 
