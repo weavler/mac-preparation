@@ -128,9 +128,22 @@ pip install virtualenv
 To install virtualenvwrapper (make sure **virtualenv** is already installed):
 
 ```bash
-$ pip install virtualenvwrapper
+pip install virtualenvwrapper
+```
+
+Then add in your environment file, `subl ~/.bash_profile` the following lines
+
+```
 $ export WORKON_HOME=~/Envs
 $ source /usr/local/bin/virtualenvwrapper.sh
+```
+
+Now you have setup virtual environment for python and there are 2 ways to create virtualenv
+
+###  To create virtualenv inside the project directory 
+
+```
+virtualenv env 
 ```
 
 ## NodeJS
